@@ -100,6 +100,7 @@ The V.Smile supports two controllers which communicate bidirectionally with the 
 
 The V.Smile Pocket have only one (reversible) controller (left/right), a slot at the back to accept cartridges, a low end lcd display and audio out. It can't accept the standard bulky reversible controllers nor the digitizer tablet.
 
+
 Along with other data, the console periodically transmits one of 16 possible values as a check byte to the controller, which transmits back a transform of the most recent two check bytes. The transform is as follows, as documented by Rebecca G. Bettencourt:
 
 Response = ((A + B + 0xF) & 0xF) ^ 0xB5
